@@ -43,7 +43,7 @@
             </div>
 
             <div class="right-div">
-                <a href="/index.html" class="btn  bg-white rounded-lg text-gray-500 "><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+                <a href="./index.html" class="btn  bg-white rounded-lg text-gray-500 "><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
             </div>
         </section>
     </header>
@@ -69,7 +69,7 @@
                 <img src="./assets/opt-3.png" alt="">
                 <p class="text-[14px] text-neutral/70">Transfer Money</p>
             </button>
-            <button class="btn flex-col h-[90px] py-[20px] rounded-2xl  bg-white">
+            <button onclick="showOnly('get-bonus')" class="btn flex-col h-[90px] py-[20px] rounded-2xl  bg-white">
                 <img src="./assets/opt-4.png" alt="">
                 <p class="text-[14px] text-neutral/70">Get Bonus</p>
             </button>
@@ -167,11 +167,29 @@
 
     </section>
 
+    <section id="get-bonus" class=" w-11/12 mx-auto mt-[40px] pb-6 hidden">
+
+        <div class="mt-[32px]">
+         <div >
+           <fieldset class="fieldset bg-white border-base-300 rounded-2xl max-w-[402px] mx-auto border p-4 max-h-[317px]">
+             <legend class="fieldset-legend text-[18px]">Get Bonus</legend>
+
+             <label class="label px-[10px] mt-[10px] font-medium text-gray-500 text-[14px]">Enter Bonus Coupon</label>
+             <input maxlength="5" minlength="5" id="get-bonus-coupon" type="text" class="input w-full rounded-full border-0 bg-base-300 p-[20px] max-w-[338px] mx-auto " placeholder="Enter your coupon"/>
+
+             <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-full w-[338px] mx-auto mb-5">Get Bonus</button>
+          </fieldset>
+        </div>
+     </div>
+
+    </section>
+
    
 
    <script src="./script/machine.js"></script>
-   <script src="script/add-money.js"></script>
-   <script src="script/cashout.js"></script>
-   <script src="script/transfer-money.js"></script>
+   <script src="./script/add-money.js"></script>
+   <script src="./script/cashout.js"></script>
+   <script src="./script/transfer-money.js"></script>
+   <script src="./script/bonus.js"></script>
 </body>
 </html>
