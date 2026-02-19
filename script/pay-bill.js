@@ -34,7 +34,7 @@ document.getElementById('pay-bill-btn').addEventListener('click', function(){
             <div class="card   card-xs shadow-sm p-3 w-full bg-white">
             <div class="card-body">
                 <h2 class="card-title font-bold text-[16px]">Pay Bill</h2>
-                 <p class="font-semibold text-[13px] text-primary/60">Pay Bill $${amount} success , Biller NUmber ${billAccNo} , at ${new Date()} </p>
+                 <p class="font-semibold text-[13px] text-primary/60"> ${payBillOption} $${amount} success , Biller NUmber ${billAccNo} , at ${new Date()} </p>
              </div>
         </div>
        
